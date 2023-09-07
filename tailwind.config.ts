@@ -16,6 +16,10 @@ const config: Config = {
       fontFamily: {
         Pacifico: ["Pacifico", "cursive"],
       },
+      colors: {
+        "new-purple": "#2901E8",
+        "new-yellow": "#FFF480",
+      },
     },
   },
   plugins: [],
