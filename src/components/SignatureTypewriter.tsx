@@ -15,7 +15,7 @@ const pacifico2 = Dancing_Script({
 
 const SignatureTypewriter = () => {
   return (
-    <div className={`text-8xl ${pacifico2.className}`}>
+    <div className={`text-8xl  ${pacifico2.className}`}>
       <Typewriter
         onInit={(typewriter) => {
           typewriter
@@ -34,7 +34,7 @@ const SignatureTypewriter = () => {
           strings: [
             "Usama Rashid Butt",
             "Software Engineer",
-            "Blockchain Engineer",
+            "Blockchain Enthusiast",
           ],
           autoStart: true,
           loop: true,
