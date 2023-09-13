@@ -13,7 +13,7 @@ import { TextAnimation } from "./TextAnimation";
 
 const HomeGrid = () => {
   return (
-    <div className='sm:grid sm:grid-cols-4 sm:grid-rows-2 gap-2 font-semibold'>
+    <div className='lg:grid lg:grid-cols-4 lg:grid-rows-2 gap-2 font-semibold'>
       <a
         href='/resume'
         target='_self'
@@ -53,7 +53,7 @@ const HomeGrid = () => {
       </a>
       <a
         href='https://github.com/UsamaRashid'
-        className='work group relative flex items-end rounded-[4.5rem] p-10 px-14 h-[33vh] sm:h-auto bg-white text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
+        className='work group relative flex items-end rounded-[4.5rem] p-10 px-14 h-[33vh] md:h-auto bg-white text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
         <TextAnimation
           text='View my Projects and Contributions.'
@@ -70,7 +70,7 @@ const HomeGrid = () => {
       </a>
       <a
         href='https://www.linkedin.com/in/usama-rashid-butt-4917a9227/'
-        className='about h-[33vh] sm:h-auto group relative flex items-end rounded-[4.5rem] p-10 px-14 bg-[hsl(240deg_6.9%_11.37%)] text-white cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
+        className='about h-[33vh] md:h-auto group relative flex items-end rounded-[4.5rem] p-10 px-14 bg-[hsl(240deg_6.9%_11.37%)] text-white cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
         <TextAnimation
           text='Learn more about me. Uncover My Professional Path'
@@ -90,7 +90,7 @@ const HomeGrid = () => {
           const email = "usamarashid.work@gmail.com";
           window.open(`mailto:${email}`);
         }}
-        className='contact h-[33vh] sm:h-auto group relative flex items-end col-span-2 rounded-[4.5rem] p-10 px-14 bg-[hsl(54.8deg_100%_75.1%)] text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
+        className='contact h-[33vh] md:h-auto group relative flex items-end col-span-2 rounded-[4.5rem] p-10 px-14 bg-[hsl(54.8deg_100%_75.1%)] text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
         <TextAnimation
           text='Let’s talk business. Get in touch!'

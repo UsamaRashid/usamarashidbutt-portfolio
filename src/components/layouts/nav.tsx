@@ -24,19 +24,19 @@ const Nav = () => {
       <div className='m-auto w-fit flex flex-col items-center justify-center'>
         {/* <Logo /> */}
         <div className={Gluten.className}>
-          <div className='text-2xl sm:text-8xl'>
+          <div className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl'>
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
                   // .typeString("Hello World!")
-                  .callFunction(() => {
-                    console.log("String typed out!");
-                  })
-                  .pauseFor(40)
+                  // .callFunction(() => {
+                  //   console.log("String typed out!");
+                  // })
+                  .pauseFor(80)
                   .deleteAll()
-                  .callFunction(() => {
-                    console.log("All strings were deleted");
-                  })
+                  // .callFunction(() => {
+                  //   console.log("All strings were deleted");
+                  // })
                   .start();
               }}
               options={{
