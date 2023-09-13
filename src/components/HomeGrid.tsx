@@ -18,7 +18,7 @@ const HomeGrid = () => {
         href='/resume'
         target='_self'
         rel='noopener noreferrer'
-        className='servies group relative flex flex-col justify-between rounded-[4.5rem] col-span-2 row-span-2 p-10 pl-14 cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear   h-[65vh] md:h-[60vh] lg:h-[60vh] bg-[hsl(250.6deg_100%_45.49%)] overflow-hidden'
+        className='servies group relative flex flex-col justify-between rounded-[2.5rem] col-span-2 row-span-2 p-10 pl-14 cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear   h-[65vh] md:h-[60vh] lg:h-[60vh] bg-[hsl(250.6deg_100%_45.49%)] overflow-hidden'
       >
         <div className='heading flex justify-between items-center'>
           <span className='text-2xl'>I build Cool Stuff</span>
@@ -51,11 +51,14 @@ const HomeGrid = () => {
           </span> */}
         </div>
       </a>
-      <a
-        href='https://github.com/UsamaRashid'
-        className='work group relative flex items-end rounded-[4.5rem] p-10 px-14 h-[33vh] md:h-auto bg-white text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
+      <div
+        onClick={() => {
+          const email = "usamarashid.work@gmail.com";
+          window.open(`mailto:${email}`);
+        }}
+        className='work group relative flex items-end rounded-[2.5rem] p-10 px-14 h-[33vh] md:h-auto bg-white text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
-        <TextAnimation
+        {/* <TextAnimation
           text='View my Projects and Contributions.'
           fontSize='3rem'
           onHover
@@ -64,13 +67,23 @@ const HomeGrid = () => {
           Work
         </span>
         <span className='ml-auto group-hover:opacity-0 transition-opacity'>
-          {/* <Terminal /> */}
           <Github />
+        </span> */}
+        <TextAnimation
+          text='Let’s talk business. Get in touch!'
+          fontSize='3rem'
+          onHover
+        />
+        <span className='text-lg group-hover:opacity-0 transition-opacity'>
+          Contact
         </span>
-      </a>
+        <span className='ml-auto group-hover:opacity-0 transition-opacity'>
+          <Send />
+        </span>
+      </div>
       <a
         href='https://www.linkedin.com/in/usama-rashid-butt-4917a9227/'
-        className='about h-[33vh] md:h-auto group relative flex items-end rounded-[4.5rem] p-10 px-14 bg-[hsl(240deg_6.9%_11.37%)] text-white cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
+        className='about h-[33vh] md:h-auto group relative flex items-end rounded-[2.5rem] p-10 px-14 bg-[hsl(240deg_6.9%_11.37%)] text-white cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
         <TextAnimation
           text='Learn more about me. Uncover My Professional Path'
@@ -85,14 +98,15 @@ const HomeGrid = () => {
           <LinkedIn />
         </span>
       </a>
-      <div
-        onClick={() => {
-          const email = "usamarashid.work@gmail.com";
-          window.open(`mailto:${email}`);
-        }}
-        className='contact h-[33vh] md:h-auto group relative flex items-end col-span-2 rounded-[4.5rem] p-10 px-14 bg-[hsl(54.8deg_100%_75.1%)] text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
+      <a
+        href='https://github.com/UsamaRashid'
+        // onClick={() => {
+        //   const email = "usamarashid.work@gmail.com";
+        //   window.open(`mailto:${email}`);
+        // }}
+        className='contact h-[33vh] md:h-auto group relative flex items-end col-span-2 rounded-[2.5rem] p-10 px-14 bg-[hsl(54.8deg_100%_75.1%)] text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
-        <TextAnimation
+        {/* <TextAnimation
           text='Let’s talk business. Get in touch!'
           fontSize='3rem'
           onHover
@@ -102,8 +116,19 @@ const HomeGrid = () => {
         </span>
         <span className='ml-auto group-hover:opacity-0 transition-opacity'>
           <Send />
+        </span> */}
+        <TextAnimation
+          text='View my Projects and Contributions.'
+          fontSize='3rem'
+          onHover
+        />
+        <span className='text-lg group-hover:opacity-0 transition-opacity'>
+          Work
         </span>
-      </div>
+        <span className='ml-auto group-hover:opacity-0 transition-opacity'>
+          <Github />
+        </span>
+      </a>
     </div>
   );
 };
