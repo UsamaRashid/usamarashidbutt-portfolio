@@ -56,7 +56,7 @@ const HomeGrid = () => {
           const email = "usamarashid.work@gmail.com";
           window.open(`mailto:${email}`);
         }}
-        className='work group relative flex items-end rounded-[2.5rem] p-10 px-14 h-[20vh] md:h-auto bg-white text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
+        className='work group relative flex items-end rounded-[2.5rem] p-10 px-14  bg-white text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
         {/* <TextAnimation
           text='View my Projects and Contributions.'
@@ -83,7 +83,7 @@ const HomeGrid = () => {
       </div>
       <a
         href='https://www.linkedin.com/in/usama-rashid-butt-4917a9227/'
-        className='about h-[20vh] md:h-auto group relative flex items-end rounded-[2.5rem] p-10 px-14 bg-[hsl(240deg_6.9%_11.37%)] text-white cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
+        className='about group relative flex items-end rounded-[2.5rem] p-10 px-14 bg-[hsl(240deg_6.9%_11.37%)] text-white cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
         <TextAnimation
           text='Learn more about me. Uncover My Professional Path'
@@ -104,7 +104,7 @@ const HomeGrid = () => {
         //   const email = "usamarashid.work@gmail.com";
         //   window.open(`mailto:${email}`);
         // }}
-        className='contact h-[20vh] md:h-auto group relative flex items-end col-span-2 rounded-[2.5rem] p-10 px-14 bg-[hsl(54.8deg_100%_75.1%)] text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
+        className='contact  group relative flex items-end col-span-2 rounded-[2.5rem] p-10 px-14 bg-[hsl(54.8deg_100%_75.1%)] text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
         {/* <TextAnimation
           text='Let’s talk business. Get in touch!'
