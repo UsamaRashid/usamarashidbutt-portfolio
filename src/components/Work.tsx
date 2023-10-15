@@ -3,7 +3,6 @@ import Indicator from "./Indicator";
 
 const WorkComponent = () => {
   return (
-    // h-[32vh] md:h-[40vh] lg:h-[40vh]
     <div className='relative flex flex-col gap-4  rounded-[2.5rem] p-20 px-14 bg-[#1b1b1f] text-[#a5a1ff]'>
       <div className='head text-3xl font-semibold'>Overview.</div>
       <div className='content sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl '>
@@ -13,7 +12,6 @@ const WorkComponent = () => {
         exceptional digital experiences. Let's collaborate to turn your ideas
         into reality!`}
       </div>
-      {/* <Indicator icon={ServiceIcon} /> */}
     </div>
   );
 };

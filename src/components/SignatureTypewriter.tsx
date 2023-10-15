@@ -19,7 +19,6 @@ const SignatureTypewriter = () => {
       <Typewriter
         onInit={(typewriter) => {
           typewriter
-            // .typeString("Hello World!")
             .callFunction(() => {
               console.log("String typed out!");
             })

@@ -6,9 +6,13 @@ import SignatureTypewriter from "../SignatureTypewriter";
 import Typewriter from "typewriter-effect";
 import localFont from "next/font/local";
 
+
 const Gluten = localFont({
-  src: "../../../public/fonts/Foldit-ExtraBold.ttf",
+  src: "../../../public/fonts/PixelifySans-SemiBold.ttf",
+  // Foldit-ExtraBold.ttf",
 });
+
+
 const Nav = () => {
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 1], [1, -3]);
@@ -28,47 +32,19 @@ const Nav = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  // .typeString("Hello World!")
-                  // .callFunction(() => {
-                  //   console.log("String typed out!");
-                  // })
                   .pauseFor(80)
                   .deleteAll()
-                  // .callFunction(() => {
-                  //   console.log("All strings were deleted");
-                  // })
                   .start();
               }}
               options={{
-                strings: ["Usama Rashid Butt", "Software Engineer"],
+                strings: ["Usama Rashid Butt", "Software Engineer","Blockchain Enthusiast"],
                 autoStart: true,
                 loop: true,
               }}
             />
           </div>
         </div>
-        {/* <div className='text-4xl '>Software Engineer</div> */}
         <div className='sm:text-xl'>
-          {/* <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                // .typeString("Hello World!")
-                .callFunction(() => {
-                  console.log("String typed out!");
-                })
-                .pauseFor(40)
-                .deleteAll()
-                .callFunction(() => {
-                  console.log("All strings were deleted");
-                })
-                .start();
-            }}
-            options={{
-              strings: ["Software Engineer", "Blockchain Enthusiast"],
-              autoStart: true,
-              loop: true,
-            }}
-          /> */}
         </div>
       </div>
     </motion.nav>

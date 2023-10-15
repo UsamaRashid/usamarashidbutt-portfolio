@@ -1,10 +1,6 @@
 "use client";
 import {
-  ArrowDown,
-  Business,
-  LogoIcon,
   Send,
-  Terminal,
   Github,
   LinkedIn,
   CodeIcon,
@@ -34,10 +30,6 @@ const HomeGrid = () => {
             <div className='triangle absolute left-20 -top-4 border-l-transparent border-r-transparent border-t-0 border-[3rem] border-b-[hsl(242.55deg_100%_81.57%)] w-0 h-0 scale-y-[1.75] animate-spin-custom group-hover:border-b-[hsl(54.8deg_100%_75.1%)] transition-colors'></div>
           </div>
         </div>
-        {/* <TextAnimation
-          text='We are specialized in Craft CMS.'
-          fontSize='5.5rem'
-        /> */}
         <div className='links flex justify-between items-center pr-4'>
           <TextAnimation
             // text='Do you have a question, an idea, or a project you need help with?'
@@ -46,9 +38,6 @@ const HomeGrid = () => {
             // onHover
           />
           <span className='text-xl'>Resume</span>
-          {/* <span>
-            <ArrowDown color='white' />
-          </span> */}
         </div>
       </a>
       <div
@@ -58,17 +47,6 @@ const HomeGrid = () => {
         }}
         className='work group relative flex items-end rounded-[2.5rem] p-10 px-14  bg-white text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
-        {/* <TextAnimation
-          text='View my Projects and Contributions.'
-          fontSize='3rem'
-          onHover
-        />
-        <span className='text-lg group-hover:opacity-0 transition-opacity'>
-          Work
-        </span>
-        <span className='ml-auto group-hover:opacity-0 transition-opacity'>
-          <Github />
-        </span> */}
         <TextAnimation
           text='Let’s talk business. Get in touch!'
           fontSize='3rem'
@@ -100,23 +78,8 @@ const HomeGrid = () => {
       </a>
       <a
         href='https://github.com/UsamaRashid'
-        // onClick={() => {
-        //   const email = "usamarashid.work@gmail.com";
-        //   window.open(`mailto:${email}`);
-        // }}
         className='contact  group relative flex items-end col-span-2 rounded-[2.5rem] p-10 px-14 bg-[hsl(54.8deg_100%_75.1%)] text-black cursor-pointer hover:scale-[0.98] transition-all duration-[250ms] hover:p-11 hover:pl-14 ease-linear overflow-hidden'
       >
-        {/* <TextAnimation
-          text='Let’s talk business. Get in touch!'
-          fontSize='3rem'
-          onHover
-        />
-        <span className='text-lg group-hover:opacity-0 transition-opacity'>
-          Contact
-        </span>
-        <span className='ml-auto group-hover:opacity-0 transition-opacity'>
-          <Send />
-        </span> */}
         <TextAnimation
           text='View my Projects and Contributions.'
           fontSize='3rem'
